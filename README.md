@@ -46,7 +46,22 @@ python manage.py makemigrations buyers sellers
 python manage.py migrate
 ```
 
-### 5. Start the server
+### 5. Load sample data (optional)
+
+The repo includes a pre-populated `db.sqlite3` with sample users, crops, and transactions. If you want a fresh database with sample data, run:
+
+```bash
+python populate_data.py
+```
+
+This adds:
+- 6 sellers (alex, sagar, sravani, adnan, aaa, faisal)
+- 5 buyers (meghana, harish, ramesh, haseeb, bbb)
+- 20 crops (Tomato, Mango, Rice, Wheat, Grapes, etc.)
+- 8 buyer transactions with blockchain records
+- 19 cart items (purchased + waiting)
+
+### 6. Start the server
 
 ```bash
 python manage.py runserver
