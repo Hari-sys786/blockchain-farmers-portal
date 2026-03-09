@@ -25,28 +25,20 @@ git clone https://github.com/Hari-sys786/blockchain-farmers-portal.git
 cd blockchain-farmers-portal
 ```
 
-### 2. Create virtual environment (recommended)
-
-```bash
-python3 -m venv venv
-source venv/bin/activate   # Linux/Mac
-# venv\Scripts\activate    # Windows
-```
-
-### 3. Install dependencies
+### 2. Install dependencies
 
 ```bash
 pip install django
 ```
 
-### 4. Run migrations
+### 3. Run migrations
 
 ```bash
 python manage.py makemigrations buyers sellers
 python manage.py migrate
 ```
 
-### 5. Load sample data (optional)
+### 4. Load sample data (optional)
 
 The repo includes a pre-populated `db.sqlite3` with sample users, crops, and transactions. If you want a fresh database with sample data, run:
 
@@ -61,7 +53,7 @@ This adds:
 - 8 buyer transactions with blockchain records
 - 19 cart items (purchased + waiting)
 
-### 6. Start the server
+### 5. Start the server
 
 ```bash
 python manage.py runserver
